@@ -1,8 +1,10 @@
 import clsx from "clsx";
+import Image from "next/image";
+import Link from "next/link";
 
 export function Header() {
   return(
-    <div>
+    <header>
           <video
             className="brightness-50 w-full h-170 object-cover fixed -z-10"
             src="/videos/background.mov"
@@ -17,17 +19,24 @@ export function Header() {
                 "transparent",
                 "bg-white/5",
                 "backdrop-blur-md",
-                "w-150",
-                "rounded-xl",
+                "w-100 h-10",
+                "rounded-sm",
                 "p-3",
-                "animation",
-                "transition",
-                "float-end"
+                "flex justify-center items-center",
               )}
             >
-              HI
+              <nav>
+                <ul className="flex items-center gap-4">
+                  <li><Link href="/">Home</Link></li>
+                  <li><Link href="/">Skills</Link></li>
+                    <Image src='/images/profile-icon.png' alt='profile' width={30} height={30}/>
+                  <li><Link href="/">Projetos</Link></li>
+                  <li><Link href="/">Sobre</Link></li>
+                </ul>
+              </nav>
+
             </div>
           </div>
-        </div>
+        </header>
   )
 }
