@@ -15,11 +15,10 @@ Este portfólio foi desenvolvido com foco em:
 Tecnologias utilizadas:
 - ⚡ [Next.js](https://nextjs.org/)
 - 🎨 [Tailwind CSS](https://tailwindcss.com/)
-- 🧊 Glassmorphism + Vídeo de fundo
-
+- 
 ---
 
 ## 🧭 Wireframe
 
 O design inicial do portfólio foi planejado no Figma.  
-👉 [Acessar Wireframe]([https://www.figma.com/seu-link-aqui](https://www.figma.com/design/dQI63vVpYmmqq6W1TfV5op/Sem-t%C3%ADtulo?node-id=0-1&p=f&t=BVoVaIRMS9EPl0BA-0))
+👉 [Acessar Wireframe](https://www.figma.com/design/dQI63vVpYmmqq6W1TfV5op/Sem-t%C3%ADtulo?node-id=0-1&p=f&t=BVoVaIRMS9EPl0BA-0)
