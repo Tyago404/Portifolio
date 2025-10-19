@@ -1,31 +1,40 @@
 import clsx from "clsx";
 import { Navbar } from "../Navbar";
+import { Paragraph } from "../Paragraph";
+import { Button } from "../Button";
 
 export function Header() {
-  return(
-    <header>
-          <video
-            className="brightness-50 w-full h-170 object-cover fixed -z-10"
-            src="/videos/background.mov"
-            autoPlay
-            loop
-            muted
-          ></video>
+  return (
+    <>
+      <header>
+        <div
+          className={clsx(
+            "flex flex-col m-auto justify-center items-center",
+            "transparent bg-white/5",
+            "backdrop-blur-md",
+            "w-150 h-10",
+            "rounded-full"
+          )}
+        >
+          <Navbar />
+        </div>
 
-          <div className="p-2 flex flex-col text-sm  justify-center items-center">
-            <div
-              className={clsx(
-                "transparent bg-white/5",
-                "backdrop-blur-md",
-                "w-90 h-8",
-                "rounded-sm",
-                "flex justify-center items-center",
-              )}
-            >
-             <Navbar />
-
-            </div>
+        <div>
+          <h1 className="text-6xl font-bold -tracking-[5px] w-100 mt-30">
+            Contrate um desenvolvedor
+            <span className="block text-[var(--color-secoundary)]">
+              Proativo
+            </span>
+          </h1>
+          <div className=" flex justify-between w-full  space-between border border-transparent border-l-2 border-l-[var(--color-secoundary)] p-2 mt-4">
+            <Paragraph
+              className="w-100"
+              text="Olá, sou Tiago vamos juntos aumentar o lucro da sua empresa com soluções inteligentes"
+            />
+            <Button text="Me contrate agora 🔥" />
           </div>
-        </header>
-  )
+        </div>
+      </header>
+    </>
+  );
 }
