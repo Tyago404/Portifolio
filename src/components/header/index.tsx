@@ -1,33 +1,26 @@
 import clsx from "clsx";
+import { Navbar } from "../Navbar";
+import { HeaderContent } from "../HeaderContent";
 
 export function Header() {
-  return(
-    <div>
-          <video
-            className="brightness-50 w-full h-170 object-cover fixed -z-10"
-            src="/videos/background.mov"
-            autoPlay
-            loop
-            muted
-          ></video>
-
-          <div className="p-2 flex flex-col  justify-center items-center">
-            <div
-              className={clsx(
-                "transparent",
-                "bg-white/5",
-                "backdrop-blur-md",
-                "w-150",
-                "rounded-xl",
-                "p-3",
-                "animation",
-                "transition",
-                "float-end"
-              )}
-            >
-              HI
-            </div>
-          </div>
+  return (
+    <>
+      <header>
+        <div
+          className={clsx(
+            "flex flex-col m-auto justify-center items-center",
+            "transparent bg-white/5",
+            "backdrop-blur-md",
+            "w-150 h-10",
+            "rounded-full",
+            "bg-gradient-to-r from-white/5 to-transparent",
+            "border border-white/10"
+          )}
+        >
+          <Navbar />
         </div>
-  )
+        <HeaderContent />
+      </header>
+    </>
+  );
 }
