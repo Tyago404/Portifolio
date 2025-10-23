@@ -5,7 +5,7 @@ import { Paragraph } from "../Paragraph";
 
 export function Navbar() {
   return (
-    <nav className="flex w-full p-6 justify-between">
+    <nav className="flex  w-full p-6 justify-between">
       <div className="flex items-center gap-1">
         <Image
           src="/images/profile-icon.png"
