@@ -12,6 +12,7 @@ export function Navbar() {
           alt="profile"
           width={40}
           height={30}
+          priority
         />
         <Paragraph className="font-bold text-xs" text="TIAGO SANTOS"/>
       </div>
