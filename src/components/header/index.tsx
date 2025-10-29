@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import { Navbar } from "../Navbar";
-import { HeaderContent } from "../HeaderContent";
+import { Navbar } from "./NavBar";
+import { HeaderContent } from "./HeaderContent";
 
 export function Header() {
   return (
@@ -13,7 +13,7 @@ export function Header() {
             "backdrop-blur-md",
             "w-150 h-10",
             "rounded-full",
-            "bg-gradient-to-r from-white/5 to-transparent",
+            "bg-linear-to-r from-white/5 to-transparent",
             "border border-white/10"
           )}
         >

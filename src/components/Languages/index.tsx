@@ -2,7 +2,7 @@ import { ImageComponent } from "../ImageComponent";
 
 export function Languages() {
   return(
-     <div className="flex mt-10 brightness-150 items-center">
+     <div className="flex py-10 brightness-150 items-center">
       <ImageComponent alt="JavaScript" src="javascript.png" />
       <ImageComponent alt="JavaScript" src="typescript.png" />
       <ImageComponent alt="React" src="react.png" />

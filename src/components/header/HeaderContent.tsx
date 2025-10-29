@@ -34,7 +34,7 @@ export function HeaderContent() {
       <h1 className="text-6xl font-bold -tracking-[5px] w-100 mt-30 ">
         Contrate um desenvolvedor
         <motion.span
-          className="block  text-[var(--color-secoundary)]"
+          className="block  text-(--color-secoundary)"
           key={myWordsArray[index]}
           initial={{ opacity: 0, y: 5 }}
           animate={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ export function HeaderContent() {
           {myWordsArray[index]}
         </motion.span>
       </h1>
-      <div className=" flex justify-between w-full  space-between border border-transparent border-l-2 border-l-[var(--color-secoundary)] p-2 mt-4">
+      <div className=" flex justify-between w-full  space-between border border-transparent border-l-2 border-l-(--color-secoundary) p-2 mt-4">
         <Paragraph
           className="w-100 opacity-80"
           text="Olá, sou Tiago vamos juntos aumentar o lucro da sua empresa com soluções inteligentes"
