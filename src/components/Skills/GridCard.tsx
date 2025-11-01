@@ -34,8 +34,10 @@ export function GridCard({
       )}
     >
       <div className="p-2 h-30 myclass">{children}</div>
-      <Heading as="h2"  text={titleText} />
-      <Paragraph className="text-[12px] font-thin  m-2 " text={text} />
+     <div className="max-h-full ">
+       <Heading as="h2"  text={titleText} />
+      <Paragraph className="text-[10px] font-thin p-1" text={text} />
+     </div>
     </div>
   );
 }
