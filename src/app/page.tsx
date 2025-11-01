@@ -16,6 +16,7 @@ export default function Home() {
       <MainContainer>
         <Header />
         <Languages />
+        <Skills />
       </MainContainer>
     </>
   );
