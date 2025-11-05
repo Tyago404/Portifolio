@@ -8,7 +8,7 @@ type HeadingProps = {
 export function Heading({text, as:Tag  = "h1"}:HeadingProps) {
   const headingStyles = {
     h1:"text-4xl  font-bold brightness-90",
-    h2:" font-[300] brightness-80 ",
+    h2:" font-[300] ",
   }
 
   return <Tag className={clsx(headingStyles[Tag],)}>{text}</Tag>
