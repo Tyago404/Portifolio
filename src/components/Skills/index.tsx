@@ -1,8 +1,7 @@
 import clsx from "clsx";
 import { Heading } from "../Heading";
-import { GridCard } from "./GridCard";
-import { GridRoundedCard } from "./GridRoundedCard";
 import { GridCardContent } from "./GridCardContent";
+import { GridRoundedContent } from "./GridRoundedContent";
 
 export function Skills() {
   return (
@@ -11,18 +10,21 @@ export function Skills() {
 
       <div
         className={clsx(
-          "grid grid-cols-3 grid-rows-3 gap-2 my-4",
-          "[grid-template-areas:'div1_div1_div2'_'div3_div4_div4'_'div5_div5_div5']"
+          "grid grid-cols-3 grid-rows-2 gap-2 my-4",
+          "[grid-template-areas:'div1_div1_div2'_'div3_div4_div4']"
         )}
       >
         <GridCardContent />
-        <GridCardContent />
-        <GridCardContent />
-        <GridCardContent />
+      </div>
 
-        <GridRoundedCard />
-        <GridRoundedCard />
-        <GridRoundedCard />
+      <Heading as="h1" text="Soft Skills" />
+      <div
+        className={clsx(
+          "grid grid-cols-3 grid-rows-1 gap-2",
+          "[grid-template-areas:'div5_div6_div7']"
+        )}
+      >
+        <GridRoundedContent />
       </div>
     </section>
   );
