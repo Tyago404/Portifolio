@@ -25,12 +25,12 @@ export function GridRoundedCard({
   return (
     <div
       className={clsx(
-        "border-8 bg-white/10 rounded-full p-10",
+        "border-8 bg-white/10 rounded-full p-8",
         "flex flex-col justify-center items-center",
         areatemplate[gridArea]
       )}
     >
-      <Heading as="h1" text={titleText} />
+      <Heading as="h2" text={titleText} />
       {children}
       <Paragraph className=" brightness-80 text-center " text={paragraphText} />
     </div>

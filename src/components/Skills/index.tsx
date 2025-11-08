@@ -10,13 +10,12 @@ export function Skills() {
 
       <div
         className={clsx(
-          "grid grid-cols-3 grid-rows-2 gap-2 my-4",
+          "grid grid-cols-3 grid-rows-2 gap-2",
           "[grid-template-areas:'div1_div1_div2'_'div3_div4_div4']"
         )}
       >
         <GridCardContent />
       </div>
-
       <Heading as="h1" text="Soft Skills" />
       <div
         className={clsx(
