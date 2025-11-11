@@ -1,19 +1,40 @@
-"use client";
 import Image from "next/image";
 import { Paragraph } from "../Paragraph";
-import { motion } from "motion/react";
 
 type ProjectProps = {
   src: string;
   alt: string;
   paragraphText: string;
   titleText: string;
+  pText: string;
 };
 
-export function Project({ src, alt, paragraphText, titleText }: ProjectProps) {
+export function Project({
+  src,
+  alt,
+  paragraphText,
+  titleText,
+  pText,
+}: ProjectProps) {
   return (
-    <div className="border w-full">
-      <div className="relative h-100 brightness-80 hover:brightness-40 transition-all ">
+    <div className="border group w-full">
+      <p
+        className="
+    absolute
+    z-100
+    m-5
+    opacity-0
+    text-white
+    -translate-x-full
+    group-hover:opacity-100
+    group-hover:translate-x-0
+    transition-all
+    duration-100
+    ease-out"
+      >
+        {pText}
+      </p>
+      <div className="relative h-100 brightness-60 hover:brightness-40 transition-all ">
         <Image src={src} alt={alt} fill className="object-cover" />
       </div>
       <div className=" flex flex-col gap-2 p-2 bg-black ">

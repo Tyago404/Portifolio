@@ -25,8 +25,8 @@ export function GridRoundedCard({
   return (
     <div
       className={clsx(
-        "border-8 bg-white/10 rounded-full p-8",
-        "flex flex-col justify-center items-center",
+        "border-8 bg-white/10 rounded-full p-8 transition-all duration-150",
+        "flex flex-col justify-center items-center hover:scale-103",
         areatemplate[gridArea]
       )}
     >
