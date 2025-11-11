@@ -11,7 +11,7 @@ export function Heading({text, as:Tag  = "h1"}:HeadingProps) {
   const headingStyles = {
     h1:`text-4xl  ${commonclasses}`,
     h2:`text-2xl ${commonclasses}`,
-    h3:"font-[300]",
+    h3:"font-[300] text-white",
   }
 
 
