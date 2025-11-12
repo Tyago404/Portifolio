@@ -4,7 +4,7 @@ type MainContainerProps = {
 
 export function MainContainer({ children }: MainContainerProps) {
   return(
-    <div className="max-w-[1200px] p-12 mx-22 flex flex-col ">
+    <div className="max-w-[1200px] p-16 mx-22 flex flex-col ">
       {children}
     </div>
   )

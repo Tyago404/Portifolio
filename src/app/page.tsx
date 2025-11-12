@@ -1,3 +1,4 @@
+import { About } from "@/components/About";
 import { Header } from "@/components/Header";
 import { Languages } from "@/components/Languages";
 import { MainContainer } from "@/components/MainContainer";
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <>
       <video
-        className="brightness-25 w-full h-150 object-cover fixed -z-10"
+        className="brightness-25 w-full object-cover fixed -z-10"
         src="/videos/headerVideo.mov"
         autoPlay
         loop
@@ -19,6 +20,7 @@ export default function Home() {
         <Languages />
         <Skills />
         <MyProjects />
+        <About />
       </MainContainer>
     </>
   );

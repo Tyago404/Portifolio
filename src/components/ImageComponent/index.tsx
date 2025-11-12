@@ -7,7 +7,7 @@ type ImageComponentProps = {
   height?:number
 }
 
-export function ImageComponent({alt, src, width=135, height=150}:ImageComponentProps) {
+export function ImageComponent({alt, src, width=180, height=150}:ImageComponentProps) {
   const fullSrc = `/images/${src}`
   return  <Image alt={alt} src={fullSrc} width={width} height={height} />
 

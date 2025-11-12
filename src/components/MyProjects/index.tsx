@@ -3,7 +3,7 @@ import { Project } from "./Project";
 
 export function MyProjects() {
   return (
-    <section>
+    <section className="border border-transparent border-b-white p-12">
       <Heading as="h1" text="Meus Projetos" />
       <div className="flex ">
         <Project

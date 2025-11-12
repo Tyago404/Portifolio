@@ -17,7 +17,7 @@ export function Project({
   pText,
 }: ProjectProps) {
   return (
-    <div className="border group w-full">
+    <div className="border group w-full ">
       <p
         className="
     absolute
@@ -34,7 +34,7 @@ export function Project({
       >
         {pText}
       </p>
-      <div className="relative h-100 brightness-60 hover:brightness-40 transition-all ">
+      <div className="relative h-100 brightness-30 hover:brightness-90 transition-all ">
         <Image src={src} alt={alt} fill className="object-cover" />
       </div>
       <div className=" flex flex-col gap-2 p-2 bg-black ">
