@@ -1,4 +1,5 @@
 import { About } from "@/components/About";
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Languages } from "@/components/Languages";
 import { MainContainer } from "@/components/MainContainer";
@@ -21,6 +22,7 @@ export default function Home() {
         <Skills />
         <MyProjects />
         <About />
+        <Footer />
       </MainContainer>
     </>
   );
