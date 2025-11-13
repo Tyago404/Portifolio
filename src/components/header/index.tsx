@@ -8,7 +8,8 @@ export function Header() {
       <header>
         <div
           className={clsx(
-            "flex flex-col m-auto justify-center items-center",
+            "fixed left-1/2 -translate-x-1/2",
+            "flex  items-center p-5 z-100",
             "transparent bg-white/5",
             "backdrop-blur-md",
             "w-150 h-10",
