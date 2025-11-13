@@ -4,6 +4,7 @@ import { Header } from "@/components/Header";
 import { Languages } from "@/components/Languages";
 import { MainContainer } from "@/components/MainContainer";
 import { MyProjects } from "@/components/MyProjects";
+import { NavBar } from "@/components/Navbar";
 import { Skills } from "@/components/Skills";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         loop
         muted
       ></video>
+      <NavBar />
       <MainContainer>
         <Header />
         <Languages />
