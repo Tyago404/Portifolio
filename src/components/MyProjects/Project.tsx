@@ -35,7 +35,7 @@ export function Project({
         {pText}
       </p>
       <div className="relative h-100 brightness-30 hover:brightness-90 transition-all ">
-        <Image src={src} alt={alt} fill className="object-cover" />
+        <Image src={src} alt={alt} fill />
       </div>
       <div className=" flex flex-col gap-2 p-2 bg-black ">
         <h1>{titleText}</h1>

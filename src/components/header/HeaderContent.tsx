@@ -31,7 +31,7 @@ export function HeaderContent() {
 
   return (
     <div>
-      <h1 className="text-6xl font-bold -tracking-[3px] w-100 mt-30 ">
+      <h1 className="text-5xl md:text-7xl font-bold -tracking-[3px] max-w-150 mt-30 ">
         Contrate um desenvolvedor
         <motion.span
           className="block  text-(--color-secoundary)"
@@ -44,9 +44,15 @@ export function HeaderContent() {
           {myWordsArray[index]}
         </motion.span>
       </h1>
-      <div className=" flex justify-between w-full  space-between border border-transparent border-l-2 border-l-(--color-secoundary) p-2 mt-4">
+      <div
+        className={clsx(
+          "flex flex-col md:flex-row gap-2 justify-between w-full",
+          "border border-transparent border-l-2 border-l-(--color-secoundary)",
+           "p-2 mt-4"
+        )}
+      >
         <Paragraph
-          className="w-100"
+          className="max-w-100"
           text="Olá, sou Tiago vamos juntos aumentar o lucro da sua empresa com soluções inteligentes"
         />
         <Button text="Me contrate agora 🔥" />

@@ -7,8 +7,8 @@ type ImageComponentProps = {
   height?:number
 }
 
-export function ImageComponent({alt, src, width=180, height=150}:ImageComponentProps) {
+export function ImageComponent({alt, src, width=180, height=180}:ImageComponentProps) {
   const fullSrc = `/images/${src}`
-  return  <Image alt={alt} src={fullSrc} width={width} height={height} />
+  return  <Image priority alt={alt} src={fullSrc} width={width} height={height}  className="w-40 h-auto" />
 
 }

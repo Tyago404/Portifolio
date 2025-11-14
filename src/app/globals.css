@@ -1,21 +1,21 @@
 @import "tailwindcss";
 
-:root{
+:root {
   --color-secoundary: #fca311;
-  --font-inter: 'Inter', sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+html::-webkit-scrollbar {
+  display: none;
 }
 
 body {
   background: black;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
-   font-family: var(--font-inter);
+  font-family: var(--font-inter);
 }
 
-
-.myclass{
+.myclass {
   background-image: radial-gradient(circle, white 1px, transparent 1px);
   background-size: 16px 16px;
-  opacity: 0.6 ;
-
+  opacity: 0.6;
 }

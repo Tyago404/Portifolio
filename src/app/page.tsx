@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <video
-        className="brightness-25 w-full object-cover fixed -z-10"
+        className="fixed inset-0 w-full h-full object-cover object-[10%_20%] brightness-25 -z-10"
         src="/videos/headerVideo.mov"
         autoPlay
         loop
@@ -20,11 +20,11 @@ export default function Home() {
       <NavBar />
       <MainContainer>
         <Header />
-        <Languages />
+        {/* <Languages />
         <Skills />
         <MyProjects />
         <About />
-        <Footer />
+        <Footer /> */}
       </MainContainer>
     </>
   );
