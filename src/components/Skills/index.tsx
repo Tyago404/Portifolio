@@ -6,7 +6,7 @@ import { GridRoundedContent } from "./GridRoundedContent";
 export function Skills() {
   return (
     <section className="p-2 flex flex-col ">
-      <Heading as="h1" text="Minhas Skills" />
+      <Heading id="skills" as="h1" text="Minhas Skills" />
 
       <div
         className={clsx(

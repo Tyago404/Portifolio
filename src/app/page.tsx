@@ -1,7 +1,7 @@
 import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { Languages } from "@/components/Languages";
+import { Gallery } from "@/components/Gallery";
 import { MainContainer } from "@/components/MainContainer";
 import { MyProjects } from "@/components/MyProjects";
 import { NavBar } from "@/components/Navbar";
@@ -20,8 +20,9 @@ export default function Home() {
       <NavBar />
       <MainContainer>
         <Header />
-        {/* <Languages />
-        <Skills />
+        <Gallery />
+       {/*
+         <Skills />
         <MyProjects />
         <About />
         <Footer /> */}

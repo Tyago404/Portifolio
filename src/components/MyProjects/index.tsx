@@ -4,7 +4,7 @@ import { Project } from "./Project";
 export function MyProjects() {
   return (
     <section className="border border-transparent border-b-white p-12">
-      <Heading as="h1" text="Meus Projetos" />
+      <Heading as="h1" id="projects" text="Meus Projetos" />
       <div className="flex ">
         <Project
           src="/images/chronos-pomodoro-print.png"

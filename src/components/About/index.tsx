@@ -16,7 +16,7 @@ export function About() {
       />
 
       <div className="flex flex-col gap-6 justify-center w-[50%] m-6">
-        <h1 className="text-5xl font-bold ">Sobre mim </h1>
+        <h1 id="about" className="text-5xl font-bold ">Sobre mim </h1>
         <Paragraph text="Sou um profissional em transição de carreira, saindo do ramo musical para seguir meu verdadeiro interesse: o desenvolvimento Front-End. Tenho ampla experiência em trabalho em equipe e no contato direto com clientes, adquirida durante meu tempo como balconista em loja de música." />
         <Paragraph text="Sou uma pessoa comunicativa, com facilidade e vontade constante de aprender. Tenho experiência com Next.js e TailwindCSS, e busco minha primeira oportunidade na área para continuar evoluindo e contribuir com projetos que unam tecnologia, design e boa experiência do usuário." />
         <div className="flex gap-4">

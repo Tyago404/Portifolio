@@ -35,7 +35,7 @@ export function NavLinks({ className, ulClasses }: NavLinksProps) {
               "md:hover:text-gray-50 transition duration-400 ease-in-out "
             )}
           >
-            <Link href="/">Skills</Link>
+            <Link href="#skills">Skills</Link>
           </li>
           <li
             className={clsx(
@@ -45,7 +45,7 @@ export function NavLinks({ className, ulClasses }: NavLinksProps) {
               "md:hover:text-gray-50 transition duration-400 ease-in-out "
             )}
           >
-            <Link href="/">Projetos</Link>
+            <a href="#projects">Projetos</a>
           </li>
           <li
             className={clsx(
@@ -55,7 +55,7 @@ export function NavLinks({ className, ulClasses }: NavLinksProps) {
               "md:hover:text-gray-50 transition duration-400 ease-in-out "
             )}
           >
-            <Link href="/">Sobre</Link>
+            <Link href="#about">Sobre</Link>
           </li>
         </ul>
       </nav>
