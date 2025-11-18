@@ -25,7 +25,7 @@ export function ImageComponent({
       src={fullSrc}
       width={width}
       height={height}
-      className={clsx('transition-all duration-300 hover:scale-105', className)}
+      className={clsx("transition-all duration-300 hover:scale-105", className)}
     />
   );
 }
