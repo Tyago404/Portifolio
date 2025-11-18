@@ -24,8 +24,7 @@ export default function Home() {
         <Skills />
         <MyProjects />
         <About />
-         {/*
-        <Footer /> */}
+        <Footer />
       </MainContainer>
     </>
   );
