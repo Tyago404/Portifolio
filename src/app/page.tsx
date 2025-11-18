@@ -21,8 +21,9 @@ export default function Home() {
       <MainContainer>
         <Header />
         <Gallery />
-       {/*
-         <Skills />
+        <Skills />
+
+        {/*
         <MyProjects />
         <About />
         <Footer /> */}

@@ -1,7 +1,10 @@
 import Image from "next/image";
 import { GridCard } from "./GridCard";
+import clsx from "clsx";
 
 export function GridCardContent() {
+  const commonClasses = "w-15 h-15 md:w-20 md:h-20";
+
   return (
     <>
       <GridCard
@@ -11,21 +14,30 @@ export function GridCardContent() {
       >
         <div className="flex gap-6 justify-center mt-4">
           <Image
-            className="animate-spin [animation-duration:110s]"
+            className={clsx(
+              "animate-spin [animation-duration:110s]",
+              commonClasses
+            )}
             src="/images/react-icon.png"
             alt="test"
             width={70}
             height={70}
           />
           <Image
-            className="animate-spin [animation-duration:110s]"
+            className={clsx(
+              "animate-spin [animation-duration:110s]",
+              commonClasses
+            )}
             src="/images/www-icon.png"
             alt="test"
             width={70}
             height={70}
           />
           <Image
-            className="animate-spin [animation-duration:110s]"
+            className={clsx(
+              "animate-spin [animation-duration:110s]",
+              commonClasses
+            )}
             src="/images/next-icon.png"
             alt="test"
             width={70}
@@ -41,14 +53,14 @@ export function GridCardContent() {
       >
         <div className="flex gap-6 justify-center  mt-4">
           <Image
-            className="animate-pulse [animation-duration:3s]"
+            className={commonClasses}
             src="/images/git-icon.png"
             alt="test"
             width={70}
             height={70}
           />
           <Image
-            className="animate-pulse [animation-duration:3s]"
+            className={commonClasses}
             src="/images/gitHub-icon.png"
             alt="test"
             width={70}
@@ -78,9 +90,27 @@ export function GridCardContent() {
         gridArea="div4"
       >
         <div className="flex gap-6 justify-center  mt-4">
-          <Image src="/images/ui-icon.png" alt="test" width={70} height={70} />
-          <Image src="/images/ui1-icon.png" alt="test" width={70} height={70} />
-          <Image src="/images/ui2-icon.png" alt="test" width={70} height={70} />
+          <Image
+            className={commonClasses}
+            src="/images/ui-icon.png"
+            alt="test"
+            width={70}
+            height={70}
+          />
+          <Image
+            className={commonClasses}
+            src="/images/ui1-icon.png"
+            alt="test"
+            width={70}
+            height={70}
+          />
+          <Image
+            className={commonClasses}
+            src="/images/ui2-icon.png"
+            alt="test"
+            width={70}
+            height={70}
+          />
         </div>
       </GridCard>
     </>
