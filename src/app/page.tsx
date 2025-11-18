@@ -22,10 +22,9 @@ export default function Home() {
         <Header />
         <Gallery />
         <Skills />
-
-        {/*
         <MyProjects />
         <About />
+         {/*
         <Footer /> */}
       </MainContainer>
     </>
