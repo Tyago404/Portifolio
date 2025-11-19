@@ -6,5 +6,5 @@ type ParagraphProps = {
 }
 
 export function Paragraph({text, className}:ParagraphProps) {
-  return <p className={clsx('text-md ', className)}>{text}</p>
+  return <p className={clsx('text-sm opacity-80', className)}>{text}</p>
 }

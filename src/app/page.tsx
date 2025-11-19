@@ -1,24 +1,30 @@
+import { About } from "@/components/About";
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { Languages } from "@/components/Languages";
+import { Gallery } from "@/components/Gallery";
 import { MainContainer } from "@/components/MainContainer";
+import { MyProjects } from "@/components/MyProjects";
+import { NavBar } from "@/components/Navbar";
 import { Skills } from "@/components/Skills";
 
 export default function Home() {
   return (
     <>
       <video
-        className="brightness-25 w-full h-150 object-cover fixed -z-10"
+        className="fixed inset-0 w-full h-full object-cover object-[10%_20%] brightness-25 -z-10"
         src="/videos/headerVideo.mov"
         autoPlay
         loop
         muted
       ></video>
+      <NavBar />
       <MainContainer>
         <Header />
-        <Languages />
-
+        <Gallery />
         <Skills />
-
+        <MyProjects />
+        <About />
+        <Footer />
       </MainContainer>
     </>
   );

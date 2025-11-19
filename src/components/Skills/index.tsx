@@ -1,23 +1,30 @@
 import clsx from "clsx";
 import { Heading } from "../Heading";
-import { GridCard } from "./GridCard";
+import { GridCardContent } from "./GridCardContent";
+import { GridRoundedContent } from "./GridRoundedContent";
 
 export function Skills() {
   return (
     <section className="p-2 flex flex-col ">
-      <Heading text="Minhas Skills" />
-
+      <Heading id="skills" as="h1" text="Minhas Skills" />
       <div
         className={clsx(
-          "grid grid-cols-3 grid-rows-3 gap-2 my-4",
-          "[grid-template-areas:'div1_div1_div2'_'div3_div4_div4'_'div5_div5_div5']"
+          "md:grid grid-cols-3 grid-rows-2 gap-2 ",
+          "[grid-template-areas:'div1_div1_div2'_'div3_div4_div4']",
+          "flex flex-col"
         )}
       >
-        <GridCard className="h-60" gridArea="div1" />
-        <GridCard gridArea="div2" />
-        <GridCard gridArea="div3" />
-        <GridCard gridArea="div4" />
-        <GridCard gridArea="div5" />
+        <GridCardContent />
+      </div>
+
+      <Heading as="h1" text="Soft Skills" />
+      <div
+        className={clsx(
+          "flex flex-col md:grid grid-cols-3 grid-rows-1 gap-4",
+          "[grid-template-areas:'div5_div6_div7']"
+        )}
+      >
+        <GridRoundedContent />
       </div>
     </section>
   );
