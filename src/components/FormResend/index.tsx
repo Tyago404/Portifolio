@@ -5,7 +5,11 @@ import { Paragraph } from "../Paragraph";
 import { useState } from "react";
 import { toast } from "react-toastify";
 
-export function FormResend() {
+type FormResendProps = {
+  onClose: () => void;
+};
+
+export function FormResend({onClose}:FormResendProps) {
   const initialFormData = {
     name: "",
     celular: "",
@@ -45,16 +49,17 @@ export function FormResend() {
     "border border-white/40 w-full p-2 placeholder:text-sm";
   const commonButtonClasses =
     "border p-2 w-30 cursor-pointer bg-white/5 hover:bg-white/15";
+
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center mt-18 w-full">
       <form
         onSubmit={handleSubmit}
         className={clsx(
           "flex flex-col justify-center",
           "border rounded-sm",
           "px-10 py-4 md:px-5 md:py-4 gap-6 w-full",
-          "bg-white/5",
-          "backdrop-blur-xl"
+          "bg-black/90",
+          "backdrop-blur-3xl"
         )}
       >
         <div>
@@ -108,13 +113,14 @@ export function FormResend() {
             name="message"
             id="message"
             placeholder="Olá Tiago, estou entrando em contato... *"
-            className={clsx(commonInputClasses, "h-40")}
+            className={clsx(commonInputClasses, "h-25")}
             value={formData.message}
             onChange={handleChange}
           ></textarea>
         </label>
 
         <div className="flex justify-end gap-2">
+          <button onClick={onClose} type="button" className={commonButtonClasses}>Voltar</button>
           <button className={commonButtonClasses}>Enviar</button>
         </div>
       </form>

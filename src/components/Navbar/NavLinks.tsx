@@ -7,7 +7,7 @@ type NavLinksProps = {
 };
 
 export function NavLinks({ className, ulClasses }: NavLinksProps) {
-const linkClasses = "block w-full h-full";
+  const linkClasses = "block w-full h-full";
   return (
     <>
       <nav className={clsx("p-6", className)}>
@@ -25,7 +25,9 @@ const linkClasses = "block w-full h-full";
               "md:hover:text-gray-50 transition duration-400 ease-in-out "
             )}
           >
-            <Link href="/" className={linkClasses}>Home</Link>
+            <Link href="/" className={linkClasses}>
+              Home
+            </Link>
           </li>
 
           <li
@@ -36,7 +38,9 @@ const linkClasses = "block w-full h-full";
               "md:hover:text-gray-50 transition duration-400 ease-in-out "
             )}
           >
-            <Link  href="#skills" className={linkClasses}>Skills</Link>
+            <Link href="#skills" className={linkClasses}>
+              Skills
+            </Link>
           </li>
           <li
             className={clsx(
@@ -46,7 +50,9 @@ const linkClasses = "block w-full h-full";
               "md:hover:text-gray-50 transition duration-400 ease-in-out "
             )}
           >
-            <a href="#projects" className={linkClasses}>Projetos</a>
+            <a href="#projects" className={linkClasses}>
+              Projetos
+            </a>
           </li>
           <li
             className={clsx(
@@ -56,7 +62,9 @@ const linkClasses = "block w-full h-full";
               "md:hover:text-gray-50 transition duration-400 ease-in-out "
             )}
           >
-            <Link href="#about" className={linkClasses}>Sobre</Link>
+            <Link href="#about" className={linkClasses}>
+              Sobre
+            </Link>
           </li>
         </ul>
       </nav>

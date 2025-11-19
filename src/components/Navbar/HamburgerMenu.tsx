@@ -10,7 +10,7 @@ export function HamburgerMenu() {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setIsClient(!isClient);
+    setIsClient(true);
   }, []);
 
   return (
@@ -21,18 +21,17 @@ export function HamburgerMenu() {
           setIsOpen(!isOpen);
         }}
       >
-       {isOpen ? <X /> : <Menu />}
+        {isOpen ? <X /> : <Menu />}
       </button>
 
       {isClient &&
         createPortal(
           <div
             onClick={() => setIsOpen(!isOpen)}
-            className={
-              clsx(
-              'fixed flex flex-col justify-center items-center' ,
-              'inset-0 p-16 z-90 backdrop-blur-xl ',
-              'transition-all duration-500 ease-in',
+            className={clsx(
+              "fixed flex flex-col justify-center items-center",
+              "inset-0 p-16 z-90 backdrop-blur-xl ",
+              "transition-all duration-500 ease-in",
 
               isOpen ? " opacity-100" : "opacity-0 pointer-events-none"
             )}
