@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function About() {
   return (
-    <section className="flex flex-col items-center md:flex-row w-full border border-transparent border-b-white py-8 justify-center">
+    <section id="about" className="flex flex-col items-center md:flex-row w-full border border-transparent border-b-white py-8 justify-center">
       <div className=" relative w-full max-w-100 aspect-square bg-white p-2 rounded-full">
         <Image
           src="/images/profile-icon.png "
@@ -17,7 +17,7 @@ export function About() {
       </div>
 
       <div className="flex flex-col gap-6 justify-center w-full md:max-w-[50%] m-6">
-        <h1 id="about" className="text-5xl font-bold ">
+        <h1 className="text-5xl font-bold ">
           Sobre mim
         </h1>
         <Paragraph text="Sou um profissional em transição de carreira, saindo do ramo musical para seguir meu verdadeiro interesse: o desenvolvimento Front-End. Tenho ampla experiência em trabalho em equipe e no contato direto com clientes, adquirida durante meu tempo como balconista em loja de música." />

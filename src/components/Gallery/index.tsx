@@ -12,7 +12,7 @@ export function Gallery() {
 
   return (
     <div className="py-10 flex justify-center ">
-      <div className="grid grid-cols-2 md:grid-cols-6 gap-2 brightness-150">
+      <div id="skills" className="grid grid-cols-2 md:grid-cols-6 gap-2 brightness-150">
         {icons.map((img, index) => (
           <ImageComponent
             key={index}

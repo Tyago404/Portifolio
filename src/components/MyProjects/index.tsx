@@ -3,8 +3,11 @@ import { Project } from "./Project";
 
 export function MyProjects() {
   return (
-    <section className="border border-transparent border-b-white p-12">
-      <Heading as="h1" id="projects" text="Meus Projetos" />
+    <section
+      id="projects"
+      className="border border-transparent border-b-white p-12"
+    >
+      <Heading as="h1" text="Meus Projetos" />
       <div className="flex flex-col md:flex-row gap-4 md:gap-0 ">
         <Project
           src="/images/chronos-pomodoro-print.png"

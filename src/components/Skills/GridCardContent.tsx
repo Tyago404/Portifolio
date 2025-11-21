@@ -75,7 +75,7 @@ export function GridCardContent() {
         gridArea="div3"
       >
         <div className="flex gap-6 justify-center  mt-4">
-          <Image src="/images/sql-icon.png" alt="test" width={70} height={70} />
+          <Image src="/images/sql-icon.png" alt="test" width={70} height={70} className={commonClasses}/>
           <ul>
             <li>GET</li>
             <li>POST</li>

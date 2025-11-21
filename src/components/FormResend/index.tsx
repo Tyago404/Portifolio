@@ -9,7 +9,7 @@ type FormResendProps = {
   onClose: () => void;
 };
 
-export function FormResend({onClose}:FormResendProps) {
+export function FormResend({ onClose }: FormResendProps) {
   const initialFormData = {
     name: "",
     celular: "",
@@ -22,6 +22,13 @@ export function FormResend({onClose}:FormResendProps) {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+
+    if (e.target.name === "celular") {
+      let celular = e.target.value.replace(/\D/g, "").slice(0, 11);
+      celular = celular.replace(/^(\d{2})(\d)/g, "($1) $2");
+      celular = celular.replace(/(\d)(\d{4})$/, "$1-$2");
+      setFormData({ ...formData, celular });
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -53,11 +60,12 @@ export function FormResend({onClose}:FormResendProps) {
   return (
     <div className="flex justify-center mt-18 w-full">
       <form
+      
         onSubmit={handleSubmit}
         className={clsx(
           "flex flex-col justify-center",
           "border rounded-sm",
-          "px-10 py-4 md:px-5 md:py-4 gap-6 w-full",
+          "px-5 py-4 md:px-5 md:py-4 gap-6 w-full",
           "bg-black/90",
           "backdrop-blur-3xl"
         )}
@@ -76,19 +84,19 @@ export function FormResend({onClose}:FormResendProps) {
               type="text"
               name="name"
               id="name"
-              placeholder="Seu nome / Nome da empresa *"
+              placeholder="Seu nome / Nome da empresa"
               className={commonInputClasses}
               value={formData.name}
               onChange={handleChange}
             />
           </label>
           <label htmlFor="celular" className={commonClasses}>
-            Celular
+            Tel/Cel
             <input
               type="text"
               name="celular"
               id="celular"
-              placeholder="(11)99999-8888"
+              placeholder="(11) 99999-8888"
               className={commonInputClasses}
               value={formData.celular}
               onChange={handleChange}
@@ -101,26 +109,32 @@ export function FormResend({onClose}:FormResendProps) {
             type="email"
             name="email"
             id="email"
-            placeholder="seuemail@exemplo.com *"
+            placeholder="seuemail@exemplo.com"
             className={commonInputClasses}
             value={formData.email}
             onChange={handleChange}
           />
         </label>
-        <label htmlFor="mensagem">
+        <label htmlFor="message">
           Mensagem
           <textarea
             name="message"
             id="message"
-            placeholder="Olá Tiago, estou entrando em contato... *"
-            className={clsx(commonInputClasses, "h-25")}
+            placeholder="Olá Tiago, estou entrando em contato..."
+            className={clsx(commonInputClasses)}
             value={formData.message}
             onChange={handleChange}
           ></textarea>
         </label>
 
         <div className="flex justify-end gap-2">
-          <button onClick={onClose} type="button" className={commonButtonClasses}>Voltar</button>
+          <button
+            onClick={onClose}
+            type="button"
+            className={commonButtonClasses}
+          >
+            Voltar
+          </button>
           <button className={commonButtonClasses}>Enviar</button>
         </div>
       </form>

@@ -28,6 +28,7 @@ export function NavBar() {
           width={40}
           height={30}
           priority
+          className="w-auto h-auto"
         />
         <Paragraph className="font-bold text-xs" text="TIAGO SANTOS" />
       </div>

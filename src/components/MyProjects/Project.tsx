@@ -35,6 +35,8 @@ export function Project({
           alt={alt}
           fill
           className="w-full h-full object-cover"
+          sizes="(max-width: 768px) 100vw,
+       (min-width: 769px) 50vw"
         />
       </div>
       <div className=" flex flex-col gap-2 p-2 bg-black ">

@@ -13,6 +13,7 @@ export function Footer() {
         width={90}
         height={30}
         priority
+        className="w-auto h-auto"
       />
       <Heading as="h1" text="Tiago Santos" />
       <ul className="flex gap-2 text-xl">
