@@ -14,6 +14,7 @@ export function MyProjects() {
           alt="chronosPrint"
           pText="Desenvolvimento"
           titleText="Chronos Pomodoro"
+          motionDuration={0.6}
           paragraphText="App web Pomodoro para gerenciar ciclos de foco de forma simples e intuitiva, com layout einterface limpa."
         />
         <Project
@@ -21,6 +22,7 @@ export function MyProjects() {
           alt="rifflyPrint"
           titleText="Riffly"
           pText="Responsividade"
+           motionDuration={0.5}
           paragraphText="E-commerce responsivo desenvolvido com Next.js, TailwindCSS e design system."
         />
         <Project
@@ -28,6 +30,7 @@ export function MyProjects() {
           alt="blogPrint"
           pText="API e Requisições"
           titleText="The Blog"
+           motionDuration={0.6}
           paragraphText="Blog para treinar consultas usando Drizzle, com fluxo simples e organizado de conteúdo."
         />
         <Project
@@ -35,6 +38,7 @@ export function MyProjects() {
           alt="HotelPrint"
           pText="Layout"
           titleText="Hotel"
+           motionDuration={0.4}
           paragraphText="Site de hotel desenvolvido com Next.js e TailwindCSS, layout responsivo e visual moderno."
         />
       </div>

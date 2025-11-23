@@ -14,10 +14,10 @@ export function NavBar() {
         "p-4",
         "z-100",
         "transparent bg-white/5",
-        "backdrop-blur-xl",
-        "lg:w-150 lg:h-10",
+        "backdrop-blur-3xl",
+        "lg:w-180 lg:h-10",
         "lg:rounded-full",
-        "bg-linear-to-r from-white/5 to-transparent",
+        "bg-linear-to-r from-white/20 to-transparent",
         "border border-white/10"
       )}
     >
@@ -32,11 +32,12 @@ export function NavBar() {
         />
         <Paragraph className="font-bold text-xs" text="TIAGO SANTOS" />
       </div>
-      <div className="flex items-center gap-4">
-        <Button classname="md:hidden" text="Contratar" />
+      <div className="flex items-center gap-4 md:hidden">
+        <Button classname="" text="Contratar" />
         <HamburgerMenu />
       </div>
-      <NavLinks className="hidden md:flex" />
+      <NavLinks className="hidden md:flex mr-10" />
+      <Button classname="hidden md:flex" text="Contratar" />
     </div>
   );
 }

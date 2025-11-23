@@ -6,7 +6,6 @@ import { MainContainer } from "@/components/MainContainer";
 import { MyProjects } from "@/components/MyProjects";
 import { NavBar } from "@/components/Navbar";
 import { Skills } from "@/components/Skills";
-import { FormResend } from "@/components/FormResend";
 
 export default function Home() {
   return (

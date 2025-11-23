@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import { Paragraph } from "../Paragraph";
 import clsx from "clsx";
+import { motion } from "motion/react";
 
 type ProjectProps = {
   src: string;
@@ -8,6 +10,7 @@ type ProjectProps = {
   paragraphText: string;
   titleText: string;
   pText: string;
+  motionDuration: number;
 };
 
 export function Project({
@@ -16,20 +19,26 @@ export function Project({
   paragraphText,
   titleText,
   pText,
+  motionDuration
 }: ProjectProps) {
   return (
-    <div className="border w-full ">
+    <motion.div
+      initial={{filter: "blur(10px)", y: 50, opacity: 0 }}
+      whileInView={{filter:"blur(0px)", y: 0, opacity: 1 }}
+      transition={{ duration: motionDuration, ease: "easeOut" }}
+      className="relative border w-full group"
+    >
       <p
         className={clsx(
-          "absolute z-100 m-5 -translate-x-full",
-          "opacity-0 text-white bg-black p-2 rounded-full text-sm",
-          "group-hover:opacity-100 group-hover:translate-x-0",
+          "absolute z-40 m-5 -translate-x-full",
+          "text-white bg-black p-2 rounded-full text-sm",
+          "opacity-0 group-hover:opacity-100 group-hover:translate-x-0",
           "transition-all duration-300 ease-out"
         )}
       >
         {pText}
       </p>
-      <div className="relative h-100 brightness-30 hover:brightness-90 transition-all ">
+      <div className="relative h-100 brightness-30 hover:brightness-90 transition-all  ">
         <Image
           src={src}
           alt={alt}
@@ -43,6 +52,6 @@ export function Project({
         <h1>{titleText}</h1>
         <Paragraph text={paragraphText} />
       </div>
-    </div>
+    </motion.div>
   );
 }

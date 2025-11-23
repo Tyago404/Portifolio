@@ -1,12 +1,16 @@
+"use client";
+
 import clsx from "clsx";
 import { Paragraph } from "../Paragraph";
 import { Heading } from "../Heading";
+import { motion } from "motion/react";
 
 type GridCardProps = {
   gridArea: "div1" | "div2" | "div3" | "div4";
   children?: React.ReactNode;
   text: string;
   titleText: string;
+  motionDuration: number;
 };
 
 export function GridCard({
@@ -14,6 +18,7 @@ export function GridCard({
   children,
   text,
   titleText,
+  motionDuration,
 }: GridCardProps) {
   const areatemplate = {
     div1: "[grid-area:div1]",
@@ -23,17 +28,23 @@ export function GridCard({
   };
 
   return (
-    <div
+    <motion.div
+      initial={{ filter: "blur(10px)", y: 50, opacity: 0 }}
+      whileInView={{ filter: "blur(0px)", y: 0, opacity: 1 }}
+      transition={{ duration: motionDuration, ease: "easeOut" }}
       className={clsx(
-        "p-2 border bg-white/1 rounded-sm",
-        areatemplate[gridArea],
+        "p-2 border bg-white/1 rounded-sm hover:scale-101 transition-all duration-500",
+        areatemplate[gridArea]
       )}
     >
       <div className="p-2 h-30 myclass">{children}</div>
-     <div className="max-h-full ">
-       <Heading as="h3"  text={titleText} />
-      <Paragraph className="text-[12px] font-thin p-1 brightness-80 " text={text} />
-     </div>
-    </div>
+      <div className="max-h-full ">
+        <Heading as="h3" text={titleText} />
+        <Paragraph
+          className="text-[12px] font-thin p-1 brightness-80 "
+          text={text}
+        />
+      </div>
+    </motion.div>
   );
 }

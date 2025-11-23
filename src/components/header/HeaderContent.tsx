@@ -32,7 +32,12 @@ export function HeaderContent() {
 
   return (
     <div>
-      <h1 className="text-5xl md:text-7xl font-bold -tracking-[3px] max-w-150 mt-30 ">
+      <motion.h1
+        initial={{filter: "blur(10px)", x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1,filter: "blur(0px)"}}
+        transition={{duration: 0.6}}
+        className="text-5xl md:text-7xl font-bold -tracking-[3px] max-w-150 mt-30 "
+      >
         Contrate um desenvolvedor
         <motion.span
           className="block  text-(--color-secoundary)"
@@ -44,8 +49,12 @@ export function HeaderContent() {
         >
           {myWordsArray[index]}
         </motion.span>
-      </h1>
-      <div
+      </motion.h1>
+      <motion.div
+        initial={{ x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
         className={clsx(
           "flex flex-col md:flex-row gap-2 justify-between w-full",
           "border border-transparent border-l-2 border-l-(--color-secoundary)",
@@ -57,7 +66,7 @@ export function HeaderContent() {
           text="Olá, sou Tiago vamos juntos aumentar o lucro da sua empresa com soluções inteligentes"
         />
         <Button text="Me contrate agora 🔥" />
-      </div>
+      </motion.div>
       <Link
         href="/downloads/cv-tiago-santos.pdf"
         download
