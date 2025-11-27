@@ -60,7 +60,6 @@ export function FormResend({ onClose }: FormResendProps) {
   return (
     <div className="flex justify-center mt-18 w-full">
       <form
-      
         onSubmit={handleSubmit}
         className={clsx(
           "flex flex-col justify-center",
@@ -133,7 +132,7 @@ export function FormResend({ onClose }: FormResendProps) {
             type="button"
             className={commonButtonClasses}
           >
-            Voltar
+            Cancelar
           </button>
           <button className={commonButtonClasses}>Enviar</button>
         </div>

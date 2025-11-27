@@ -4,20 +4,20 @@ import { Button } from "../Button";
 import clsx from "clsx";
 
 export function Footer() {
-  const commonClasses = "rounded-full p-2 opacity-50 text-sm bg-white/5 "
+  const commonClasses = "rounded-full p-2 opacity-50 text-sm bg-white/5 ";
   return (
     <footer className="flex flex-col items-center justify-center mt-10 ">
       <Image
         src="/images/tiago-photo-footer.png"
         alt="profile"
-        width={90}
-        height={30}
+        width={200}
+        height={200}
         priority
-        className="w-auto h-auto"
+        className="w-60 h-auto opacity-70  brightness-70"
       />
       <Heading as="h1" text="Tiago Santos" />
       <ul className="flex gap-2 text-xl">
-        <li className={clsx(commonClasses, 'min-w-21')}>Front-end</li>
+        <li className={clsx(commonClasses, "min-w-21")}>Front-end</li>
         <li className={commonClasses}>UX/UI</li>
         <li className={commonClasses}>Proativo</li>
         <li className={commonClasses}> Profissional</li>
