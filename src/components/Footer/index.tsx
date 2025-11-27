@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <footer className="flex flex-col items-center justify-center mt-10 ">
       <Image
-        src="/images/profile-icon.png"
+        src="/images/tiago-photo-footer.png"
         alt="profile"
         width={90}
         height={30}

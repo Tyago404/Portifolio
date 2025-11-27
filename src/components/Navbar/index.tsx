@@ -23,12 +23,12 @@ export function NavBar() {
     >
       <div className="flex items-center gap-1">
         <Image
-          src="/images/profile-icon.png"
+          src="/images/tiago-photo-navbar.png"
           alt="profile"
           width={40}
           height={30}
           priority
-          className="w-auto h-auto"
+          className="w-auto h-auto opacity-70 brightness-90"
         />
         <Paragraph className="font-bold text-xs" text="TIAGO SANTOS" />
       </div>

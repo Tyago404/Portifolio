@@ -19,11 +19,11 @@ export function About() {
         className=" relative w-full max-w-100 aspect-square bg-white p-2 rounded-full"
       >
         <Image
-          src="/images/profile-icon.png "
+          src="/images/tiago-photo-about.png"
           alt="profile"
           fill
           priority
-          className="bg-blue-200 object-cover w-full h-full rounded-full "
+          className="w-full h-full rounded-full "
         />
       </motion.div>
 
