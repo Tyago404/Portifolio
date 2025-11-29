@@ -18,10 +18,19 @@
         "name": "next"
       }
     ],
+    "baseUrl": "src",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/FormResend/EmailTemplate.tsx", "src/components/FormResend/index.tsx", "src/app/api/send/route.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/components/FormResend/EmailTemplate.tsx",
+    "src/components/FormResend/index.tsx",
+    "src/app/api/send/route.ts"
+  ],
   "exclude": ["node_modules"]
 }
