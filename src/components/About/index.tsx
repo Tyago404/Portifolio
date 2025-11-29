@@ -13,7 +13,7 @@ export function About() {
       className="flex flex-col items-center md:flex-row w-full border border-transparent border-b-white py-8 justify-center"
     >
       <motion.div
-        initial={{ x: -50, opacity: 0 }}
+        initial={{ x: -10, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1 }}
         className=" relative w-full max-w-100 aspect-square bg-white p-2 rounded-full"
@@ -28,7 +28,7 @@ export function About() {
       </motion.div>
 
       <motion.div
-        initial={{ x: 50, opacity: 0 }}
+        initial={{ x: 10, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1 }}
         className="flex flex-col gap-6 justify-center w-full md:max-w-[50%] m-6"

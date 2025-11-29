@@ -13,7 +13,7 @@ export function Footer() {
         width={200}
         height={200}
         priority
-        className="w-60 h-auto opacity-70  brightness-70"
+        className="w-60 h-auto opacity-60  brightness-70 rounded-full bg-linear-to-r from-white/20 to-transparent"
       />
       <Heading as="h1" text="Tiago Santos" />
       <ul className="flex gap-2 text-xl">
