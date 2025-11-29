@@ -12,12 +12,17 @@ export default function Home() {
     <>
       <video
         className="fixed inset-0 w-full h-full object-cover object-[10%_20%] brightness-25 -z-10"
-        src="/videos/headerVideo.mp4"
         autoPlay
         loop
         muted
         playsInline
-      ></video>
+        controls={false}
+        disablePictureInPicture
+        controlsList="nodownload nofullscreen noplaybackrate noremoteplayback"
+      >
+        <source src="/videos/headerVideo.mp4" type="video/mp4" />
+        <source src="/videos/headerVideo.mov" type="video/quicktime" />
+      </video>
       <NavBar />
       <MainContainer>
         <MainHeader />

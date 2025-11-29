@@ -29,7 +29,7 @@ export function GridCard({
 
   return (
     <motion.div
-      initial={{ filter: "blur(10px)", y: 50, opacity: 0 }}
+      initial={{ filter: "blur(10px)", y: 5, opacity: 0 }}
       whileInView={{ filter: "blur(0px)", y: 0, opacity: 1 }}
       transition={{ duration: motionDuration, ease: "easeOut" }}
       className={clsx(
