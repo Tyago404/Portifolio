@@ -8,7 +8,7 @@ import { ArrowDownToLine } from "lucide-react";
 import clsx from "clsx";
 import Link from "next/link";
 
-export function HeaderContent() {
+export function MainHeader() {
   const myWordsArray = [
     "Proativo",
     "Colaborativo",
@@ -33,9 +33,9 @@ export function HeaderContent() {
   return (
     <div>
       <motion.h1
-        initial={{filter: "blur(10px)", x: -50, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1,filter: "blur(0px)"}}
-        transition={{duration: 0.6}}
+        initial={{ filter: "blur(10px)", x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1, filter: "blur(0px)" }}
+        transition={{ duration: 0.6 }}
         className="text-5xl md:text-7xl font-bold -tracking-[3px] max-w-150 mt-30 "
       >
         Contrate um desenvolvedor

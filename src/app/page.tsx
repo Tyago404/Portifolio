@@ -1,6 +1,6 @@
 import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
+import { MainHeader } from "@/components/MainHeader";
 import { Gallery } from "@/components/Gallery";
 import { MainContainer } from "@/components/MainContainer";
 import { MyProjects } from "@/components/MyProjects";
@@ -19,7 +19,7 @@ export default function Home() {
       ></video>
       <NavBar />
       <MainContainer>
-        <Header />
+        <MainHeader />
         <Gallery />
         <Skills />
         <MyProjects />
