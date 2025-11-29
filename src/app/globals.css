@@ -10,6 +10,17 @@ html::-webkit-scrollbar {
 html {
   scroll-behavior: smooth;
 }
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
+
+video {
+  pointer-events: none;
+}
 
 body {
   background: black;

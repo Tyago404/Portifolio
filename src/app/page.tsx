@@ -12,10 +12,11 @@ export default function Home() {
     <>
       <video
         className="fixed inset-0 w-full h-full object-cover object-[10%_20%] brightness-25 -z-10"
-        src="/videos/headerVideo.mov"
+        src="/videos/headerVideo.mp4"
         autoPlay
         loop
         muted
+        playsInline
       ></video>
       <NavBar />
       <MainContainer>

@@ -11,7 +11,7 @@ export function GridCardContent() {
         titleText="Desenvolvimento Web Front-End"
         text="Crio aplicações web modernas e responsivas, focando em interfaces intuitivas e experiências fluidas. Trabalho com React.js e Next.js para entregar soluções eficientes, garantindo desempenho, acessibilidade e design que engaja o usuário"
         gridArea="div1"
-        motionDuration={0.1}
+        motionDuration={0.2}
       >
         <div className="flex gap-6 justify-center mt-4">
           <Image
@@ -75,7 +75,7 @@ export function GridCardContent() {
         titleText="Integração com APIs"
         text="Conecto interfaces a APIs REST, garantindo desempenho e comunicação fluida entre frontend e backend."
         gridArea="div3"
-        motionDuration={0.1}
+        motionDuration={0.2}
       >
         <div className="flex gap-6 justify-center  mt-4">
           <Image
