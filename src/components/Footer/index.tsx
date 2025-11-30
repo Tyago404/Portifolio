@@ -6,7 +6,7 @@ import clsx from "clsx";
 export function Footer() {
   const commonClasses = "rounded-full p-2 opacity-50 text-sm bg-white/5 ";
   return (
-    <footer className="flex flex-col items-center justify-center mt-10 ">
+    <footer className="flex flex-col items-center justify-center mt-10">
       <Image
         src="/images/tiago-photo-footer.png"
         alt="profile"

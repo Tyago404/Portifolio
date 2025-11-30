@@ -3,13 +3,15 @@
 import clsx from "clsx";
 import { Paragraph } from "../Paragraph";
 import { useState } from "react";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 
 type FormResendProps = {
   onClose: () => void;
 };
 
 export function FormResend({ onClose }: FormResendProps) {
+  const emailSuccess = () => toast.success("Email enviado com sucesso!");
+
   const initialFormData = {
     name: "",
     celular: "",
@@ -44,7 +46,7 @@ export function FormResend({ onClose }: FormResendProps) {
     const data = await res.json();
 
     if (data.success) {
-      toast.success("Mensagem enviada com sucesso!");
+      emailSuccess();
       setFormData(initialFormData);
     } else {
       console.log("Erro ao enviar email");
@@ -59,6 +61,13 @@ export function FormResend({ onClose }: FormResendProps) {
 
   return (
     <div className="flex justify-center mt-18 w-full">
+      <ToastContainer
+        position="bottom-right"
+        autoClose={3000}
+        theme="dark"
+        className="z-300 mt-50"
+      />
+
       <form
         onSubmit={handleSubmit}
         className={clsx(

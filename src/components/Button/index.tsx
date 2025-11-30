@@ -36,11 +36,15 @@ export function Button({ text, classname }: ButtonProps) {
         createPortal(
           <div
             className={clsx(
-              "w-full h-full backdrop-blur-xl fixed flex flex-col justify-center items-center inset-0 p-16 z-90",
+              "w-full h-full backdrop-blur-xl fixed flex flex-col justify-center items-center inset-0 p-16 z-49",
               isOpen ? " opacity-100" : "opacity-0 pointer-events-none"
             )}
           >
-            <FormResend onClose={()=>{setIsOpen(false)}}/>
+            <FormResend
+              onClose={() => {
+                setIsOpen(false);
+              }}
+            />
           </div>,
           document.body
         )}

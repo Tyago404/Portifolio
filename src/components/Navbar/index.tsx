@@ -12,7 +12,7 @@ export function NavBar() {
         "fixed lg:left-1/2 lg:-translate-x-1/2 lg:p-[22px] lg:mt-16",
         "flex w-full items-center justify-between",
         "p-4",
-        "z-100",
+        "z-50",
         "transparent bg-white/5",
         "backdrop-blur-3xl",
         "lg:w-180 lg:h-10",
