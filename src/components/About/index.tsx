@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 import { Paragraph } from "../Paragraph";
-import { Facebook, GithubIcon, Instagram, Linkedin } from "lucide-react";
+import { Facebook, GithubIcon, Instagram, Linkedin, Phone } from "lucide-react";
 import Link from "next/link";
 import { motion } from "motion/react";
 
 export function About() {
+  const commonClasses =
+    "hover:scale-101 hover:brightness-75 transition-all duration-300";
   return (
     <section
       id="about"
@@ -38,32 +40,41 @@ export function About() {
         <Paragraph text="Sou uma pessoa comunicativa, com facilidade e vontade constante de aprender. Tenho experiência com Next.js e TailwindCSS, e busco minha primeira oportunidade na área para continuar evoluindo e contribuir com projetos que unam tecnologia, design e boa experiência do usuário." />
         <div className="flex gap-4">
           <Link
-            className="hover:scale-101 hover:brightness-75 transition-all duration-300"
+            className={commonClasses}
             target="_blank"
             href={"https://www.linkedin.com/in/tiago-santos-53761b179/"}
           >
             <Linkedin size={30} />
           </Link>
           <Link
-            className="hover:scale-101 hover:brightness-75 transition-all duration-300"
+            className={commonClasses}
             target="_blank"
             href={"https://github.com/Tyago404"}
           >
             <GithubIcon size={30} />
           </Link>
           <Link
-            className="hover:scale-101 hover:brightness-75 transition-all duration-300"
+            className={commonClasses}
             target="_blank"
             href={"https://www.facebook.com/tiago.santos.256554"}
           >
             <Facebook size={30} />
           </Link>
           <Link
-            className="hover:scale-101 hover:brightness-75 transition-all duration-300"
+            className={commonClasses}
             target="_blank"
             href={"https://www.instagram.com/tyago404/"}
           >
             <Instagram size={30} />
+          </Link>
+          <Link
+            className={commonClasses}
+            target="_blank"
+            href={
+              "https://wa.me/5511940571680?text=Ol%C3%A1%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar"
+            }
+          >
+            <Phone size={30} />
           </Link>
         </div>
       </motion.div>

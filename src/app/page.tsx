@@ -6,6 +6,7 @@ import { MainContainer } from "@/components/MainContainer";
 import { MyProjects } from "@/components/MyProjects";
 import { NavBar } from "@/components/Navbar";
 import { Skills } from "@/components/Skills";
+import { WhatsappButton } from "@/components/Whatsapp";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <source src="/videos/headerVideo.mov" type="video/quicktime" />
       </video>
       <NavBar />
+      <WhatsappButton />
       <MainContainer>
         <MainHeader />
         <Gallery />

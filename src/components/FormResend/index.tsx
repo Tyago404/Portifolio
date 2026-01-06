@@ -4,6 +4,8 @@ import clsx from "clsx";
 import { Paragraph } from "../Paragraph";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
+import Link from "next/link";
+import { Phone } from "lucide-react";
 
 type FormResendProps = {
   onClose: () => void;
@@ -134,7 +136,18 @@ export function FormResend({ onClose }: FormResendProps) {
             onChange={handleChange}
           ></textarea>
         </label>
-
+        <Link
+          className="flex gap-2 items-center hover:scale-101 transition-all duration-150 max-w-max border border-white/40 rounded-sm p-2"
+          target="_blank"
+          href={
+            "https://wa.me/5511940571680?text=Ol%C3%A1%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar"
+          }
+        >
+          <span className="border rounded-full p-2">
+            <Phone size={30} />
+          </span>
+          Ou me chame no <span className="text-green-400">whatsapp!</span>
+        </Link>
         <div className="flex justify-end gap-2">
           <button
             onClick={onClose}
