@@ -1,4 +1,3 @@
-import { Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,7 +6,7 @@ export function WhatsappButton() {
   return (
     <Link
       className="fixed right-1 bottom-1 m-5 md:m-20 cursor-pointer hover:scale-105
-      hover:opacity-100 transition-all  duration-200 opacity-60  z-999"
+      hover:opacity-100 transition-all  duration-200 opacity-60  z-40"
       target="_blank"
       href={
         "https://wa.me/5511940571680?text=Ol%C3%A1%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar"
