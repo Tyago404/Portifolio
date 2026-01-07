@@ -68,7 +68,7 @@ export function MainHeader() {
         <Button text="Me contrate agora 🔥" />
       </motion.div>
       <Link
-        href="/downloads/cv-tiago-santos.pdf"
+        href="/downloads/cv_tiago_santos.pdf"
         download
         className={clsx(
           "flex items-center ",
