@@ -2,7 +2,7 @@
 
 Meu espaço na web para apresentar projetos, habilidades, trajetória e tudo o que venho construindo como Desenvolvedor Frontend.
 
-🔗 **Acesse online:** https://tiago-santos-portifolio.vercel.app/
+🔗 **Acesse online:** https://tiago-santos-portfolio.vercel.app/
 
 ---
 
